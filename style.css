@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 70vw;
+    margin: auto;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+section{
+    margin-top: 5px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: small;
+    margin-right: 5px;
+}
+
+button{
+    height: 5vh;
+    width: 30vw;
+    border: none;
+    background: black;
+    font-size: calc(4px + 1vw);
+    color: white;
+    margin: auto;
+}
+
+main{
+    margin: auto;
+    width: 70vw;
+    display: grid;
+    grid-template: "uno uno dos" 100px
+                   "uno uno tres" 100px
+                   "cuatro cinco cinco" 100px
+                   "seis cinco cinco" 100px
+                   "siete siete ocho" 100px
+                   "siete siete nueve" 100px;
+    grid-gap:10px;
+}
+
+div{
+    background: rgba(128, 128, 128, 0.164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menores{
+    width: 80px;
+}
+
+.tamaño{
+    width: 160px;
+}
+
+.mayores{
+    width: 100px;
+}
+
+.uno{
+    grid-area: uno;
+}
+
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+.cuatro{
+    grid-area: cuatro;
+}
+
+.cinco{
+    grid-area: cinco;
+}
+
+.seis{
+    grid-area: seis;
+}
+
+.siete{
+    grid-area: siete;
+}
+
+.ocho{
+    grid-area: ocho;
+}
+
+.nueve{
+    grid-area: nueve;
+}
+
+footer{
+    padding: 10px;
+    width: 70vw;
+    margin: 10px auto;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.164);
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        width: 95vw;
+    }
+
+    main{
+        width: 95vw;
+    }
+    
+    button{
+        width:100vw;
+    }
+
+    footer{
+        width: 95vw;
+    }
+}
